@@ -1,0 +1,9 @@
+import inspect
+def main():
+	functName = inspect.stack()[0][3]
+	print "function %s in file, %s" %(functName, __file__)
+
+
+print __name__
+if __name__ == "__main__":
+    main()
